@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alsaeed</title>
+    <link rel="icon" type="icon/png" href="image/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <style>
+        body {
+          height: 100vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: 0 0 10px black;
+          padding: 0 10px;
+          margin-bottom: 5%;
+        }
+
+        .logo-page {
+          width: 18%;
+        }
+
+        .navpar ul {
+          list-style: none;
+          text-decoration: none;
+          display: flex;
+        }
+
+        .navpar a {
+          text-decoration: none;
+          background-color: rgb(54, 86, 75);
+          color: white;
+          margin: 0 0.5vw;
+          padding: 0.5vw 1.2vw;
+          border-radius: 5px;
+        }
+
+        .home {
+          background-image: 
+          linear-gradient(to left, rgba(54, 86, 75, 2) 28vw, rgba(125, 127, 223, 0.214) 0%),
+          url("../image/sa.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 1, 0.23);
+            margin: 0 auto;
+            margin-bottom: 5%;
+            width: 85%;
+            height: 35vw;
+        }
+
+        .home-text {
+          color: aliceblue;
+          border-radius: 0 10px 10px 0;
+          float: right;
+          text-align: center;
+          width: 30%;
+          font-size: 1.1vw;
+          padding: 0px 15px;
+          position: relative;
+          top: 10vw;
+        }
+
+        .home-text h3 {
+          color: rgb(204, 237, 18);
+        }
+
+        .home-text a {
+          text-decoration: none;
+        }
+
+        .home-text input {
+          position: relative;
+          top: 10vw;
+          background-color: rgba(255, 255, 0, 0.812);
+          border-radius: 5px;
+          font-weight: bold;
+          padding: 1vw 3.7vw;
+          margin: 0 10px; 
+          border: none; 
+          cursor: pointer;
+        }
+
+        .social-media {
+          box-shadow: 0 0 10px rgba(0, 0, 1, 0.23);
+          margin: 5vw;
+          border-radius: 5px;
+        }
+
+        .social-media .addr {
+          background-color: #2f2f32;
+          color: white;
+          text-align: center;
+          border-radius: 0 0 5px 5px;
+          font-size: 15px;
+          padding: 16px;
+          margin-left: 30vw;
+          margin-right: 30vw;
+        }
+
+        .social {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .social div {
+          box-shadow: 0 0 10px rgba(0, 0, 1, 0.23);
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          border-radius: 5px;
+          width: 20vw;
+          height: 15vw;
+          padding: 20px 15px 0px 15px;
+          margin: 20px 80px 30px 20px;
+        }
+
+        .social i {
+          background-color: #2f2f32;
+          color: white;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 2vw;
+          padding: 1.5vw 2vw;
+          margin-bottom: 10px;
+        }
+
+        .social b {
+          font-size: 1.2vw;
+          color: #2f2f32;
+        }
+
+        .social p {
+          color: #2f2f32;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+
+        .footer {
+          background-color: #2f2f32;
+          height: 8vw;
+          color: white;
+          text-align: center;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100vw;
+        }
+
+        .footer-page a {
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+          margin: 15px;
+        }
+
+        .footer-page,
+        .footer-cull {
+          flex: 50%;
+          box-sizing: border-box;
+          padding: 0 10px;
+        }
+
+        .copy {
+          border-top: 1px rgba(255, 255, 255, 0.434) solid;
+          color: rgba(255, 255, 255, 0.718);
+          width: 100vw;
+          padding: 10px;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+          .logo-page {
+            width: 50%;
+          }
+
+          .navpar ul {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .navpar a {
+            margin: 5px 0;
+          }
+
+          .home {
+            width: 95%;
+            height: auto;
+          }
+
+          .home-text {
+            width: 90%;
+            font-size: 3vw;
+            float: none;
+            top: 5vw;
+            margin: 0 auto;
+          }
+
+          .home-text input {
+            width: 90%;
+            padding: 2vw 4vw;
+          }
+
+          .social-media .addr {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            font-size: 3vw;
+          }
+
+          .social div {
+            width: 80vw;
+            height: auto;
+            margin: 20px 0;
+          }
+
+          .social i {
+            font-size: 5vw;
+            padding: 3vw 4vw;
+          }
+
+          .social b {
+            font-size: 4vw;
+          }
+
+          .social p {
+            font-size: 3vw;
+            margin-bottom: 20px;
+          }
+
+          .footer {
+            height: auto;
+            flex-direction: column;
+          }
+
+          .footer-page,
+          .footer-cull {
+            flex: 100%;
+            text-align: center;
+            margin: 10px 0;
+          }
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <img class="logo-page" src="./image/alsaeed.png" alt="">  
+       
+        <nav class="navpar">
+          <ul>
+            <li>
+              <a href="Pages/About-us.html"> من نحن </a>
+            </li>
+            <li>
+              <a href="Pages/Call-us.html"> اتصل بنا </a>
+            </li>
+            <li>
+              <a href="menu.php"> قائمة الطعام </a>
+            </li>
+            <li>
+              <a href="#"> الصفحة الرئيسية </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="home">
+      <!-- <img src="image/a.png" alt="">--> 
+      <div class="home-text">
+        <p>
+          <h3>
+            مرحباّ 
+            <br>
+            بكم في مطعمنا الالكتروني 
+          </h3>
+          نحن فخورون بتقديم أشهى الأطباق والوجبات السريعة لعملائنا الكرام. 
+          يمكنك الاطلاع على قائمة الطعام الشاملة لدينا واختيار ما يناسب ذوقك ورغبتك. 
+        </p>
+
+        <a href="log-in/login.php"> 
+          <input type="submit" value="تسجيل دخول ">
+        </a>
+        <a href="Sign-in/Signin.php"> 
+          <input type="submit" value="حساب جديد">
+        </a>
+      </div>
+    </div>
+      
+    <div class="social-media">
+      <p class="addr">
+        .لـ تصميم موقع خاص بك او الاعلان على موقعنا ، تواصل معنا
+      </p>
+      <div class="social">
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>Phone</p>
+          <b>
+            <span class="fa fa-phone"></span>
+            - + 967 713 887 232</b>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p> Email </p>
+          <b>
+            <span class="fa fa-envelope"></span>
+            - madyb1291@gmail.com</b>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-page">
+        <p>: الصفحات</p>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="menu.html">قائمة الطعام</a>
+        <a href="Pages/Call-us.html">اتصل بنا</a>
+        <a href="Pages/About-us.html">من نحن</a>
+      </div>
+      <div class="footer-cull">
+        <p>: للاتصال بنا</p>
+        <p>- رقم الهاتف: 009674257178</p>
+      </div>
+      <div class="copy">
+        &copy; جميع الحقوق محفوظة لدى : مطعم السعيد 2023
+      </div>
+    </footer>
+</body>
+</html>
